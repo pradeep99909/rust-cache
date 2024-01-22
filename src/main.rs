@@ -29,7 +29,7 @@ fn main() {
                     return;
                 }
                 let key: String = args[1].clone();
-                let val: i8 = args[2].trim().parse().expect("required a number");
+                let val: String = args[2].trim().parse().expect("value required");
                 data.add(key, val)
             }
         }

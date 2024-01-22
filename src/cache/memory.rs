@@ -1,11 +1,11 @@
 use std::collections::HashMap;
 
 pub struct Data {
-    pub hash: HashMap<String, i8>
+    pub hash: HashMap<String, String>
 }
 
 impl Data {
-    pub fn add(&mut self, key: String, val: i8) {
+    pub fn add(&mut self, key: String, val: String) {
         self.hash.insert(key, val);
     }
     pub fn read(&mut self, key: String) {
