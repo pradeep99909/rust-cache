@@ -24,9 +24,10 @@ fn main() {
                     print!("Parameter missing");
                     return;
                 }
+                let operation = args[0].clone();
                 let key: String = args[1].clone();
                 let val: String = args[2].trim().parse().expect("value required");
-                data.write(key, val)
+                data.write(operation, key, val)
             }
         }
     }
